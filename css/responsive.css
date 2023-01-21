@@ -1,0 +1,50 @@
+@media screen and (max-width: 992px) {
+    #home .text_area .h_text1{
+        font-size: 2.3rem;
+    }
+    #home .text_area .h_text2{
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0 20px 0;
+    }
+    #home .text_area{
+        padding-left: 0;
+    }
+    #home .text_area .buttons{
+        justify-content: center;
+    }
+    #portfolio .filter_btn{
+        flex-wrap: wrap;
+        width: 100%;
+        gap: .5rem;
+    }
+    #portfolio .filter_btn button{
+        font-size: .7rem;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    #dashboard{
+        padding-top: 40px;
+    }
+    #home .text_area .h_text2{
+        font-size: 1.8rem;
+    }
+    #home .par_image_box .social{
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width: 310px) {
+    #home .text_area .h_text2{
+        font-size: 1.2rem;
+    }
+    #home .par_image_box .parson_imag{
+        padding: 15px;
+    }
+    
+}
