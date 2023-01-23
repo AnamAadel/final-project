@@ -106,7 +106,7 @@ for(var i=0;i<persentage.length;i++){
 
 
 new Typewriter('.h_text2', {
-    strings: ['Web Designer', 'UI/UX Designer','Freelacer'],
+    strings: ['Web Designer', 'UI/UX Designer','Freelnacer'],
     autoStart: true,
     loop: true,
   });
