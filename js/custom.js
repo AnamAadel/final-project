@@ -1,10 +1,24 @@
  // "use strict";
 ///////// jquery code start
 $(document).ready(function(){
+
+    $(window).on("orientationchange",function(event){
+        let vy = $(window).innerHeight();
+        console.log($('#dashboard'));
+
+        if(vy <= 400){
+            $("#dashboard").removeClass('screenRot');
+        }else{
+            $("#dashboard").addClass('screenRot');
+
+        }
+
+    });
    
     $('.menu_toggler').click(function(){
         $(this).toggleClass('notice');
         $('.nav').toggleClass('notice');
+        console.log(window.innerHeight);
 
     })
     $('.setting').click(function(){
@@ -22,6 +36,8 @@ $(document).ready(function(){
 
 
 
+
+// theme colors plugin
 
 const color_pick = document.querySelectorAll('.color_btn');
 const elem_color = document.querySelectorAll('.elem_color');
@@ -62,26 +78,6 @@ for(var i=0;i<color_pick.length;i++){
 }
 
 // parallax code start
-
-// document.addEventListener('mousemove',parallax);
-// function parallax(e){
-//     this.querySelectorAll('.move').forEach(function(layer){
-//         let speed = layer.getAttribute('data-speed');
-        
-//         let x = (window.innerWidth - e.pageX*speed)/100;
-//         let y = (window.innerHeight - e.pageY*speed)/100;
-//         layer.style.transform = `translate(${x}px,${y}px)`;
-
-//         let page_x = window.outerWidth;
-//         if(page_x <992 ){
-//             layer.classList.remove('move');
-//         }else{
-//             layer.classList.remove('move');
-
-//         }
-//         console.log(window.innerWidth)
-//     })
-// }
 
 var scene = document.querySelector('.parson_pic');
 var parallaxInstance = new Parallax(scene);
