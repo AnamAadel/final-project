@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5,h6,p,span{
 .heading{
     font-family: var(--LuckiestGuy);
     font-size: 2.8rem;
-    margin-bottom: 2.3rem;
+    margin-bottom: 1rem;
     line-height: 3rem;
     word-break: break-all;
 }
@@ -378,10 +378,10 @@ h1,h2,h3,h4,h5,h6,p,span{
 
 }
 #dashboard .color_pick .color_btn.three{
-    background: #A77979;
+    background: #309d0d;
 }
 #dashboard .color_pick .color_btn.four{
-    background: #8B9A46;
+    background: #892d8f;
 }
 
 /***************************************
@@ -431,7 +431,7 @@ h1,h2,h3,h4,h5,h6,p,span{
     gap: 20px;
     
 }
-#home .par_image_box .social a{
+#home .par_image_box .social .btn{
     width: 50px;
     aspect-ratio: 1/1;
     display: grid;
@@ -445,23 +445,10 @@ h1,h2,h3,h4,h5,h6,p,span{
     border: 3px solid var(--black);
     border-radius: 50%;
 }
-#home .par_image_box .social a:hover{
+#home .par_image_box .social .btn:hover{
     background: var(--black);
     /* border-color: var(--sky); */
-    color: var(--sky);
-}
-#home .par_image_box .social a .s_border{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotateX(180deg);
-    transition: all linear .4s;
-    
-}
-#home .par_image_box .social a:hover .s_border{
-    transform: translate(-50%,-50%) rotateX(0deg);
+    color: var(--sky) !important;
 }
 /*************home page second collumn*********/
 #home .text_area{
@@ -513,20 +500,10 @@ h1,h2,h3,h4,h5,h6,p,span{
     position: relative;
     perspective: 150px;
     transform-style: preserve-3d;
-}
-#home .text_area .buttons .h_btn .btn_border{
-    width: 100%;
-    height: 100%;
     border: 2px solid var(--black);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 3rem;
-    transition: var(--trans);
 }
 #home .text_area .buttons .h_btn:hover{
-    color: var(--sky);
+    color: var(--sky) !important;
     background: var(--black);
 }
 /***************************************
@@ -659,7 +636,7 @@ h1,h2,h3,h4,h5,h6,p,span{
     justify-content: center;
     gap: 1rem;
 }
-#about .ab_social a{
+#about .ab_social .btn{
     width: 45px;
     aspect-ratio: 1/1;
     display: grid;
@@ -671,9 +648,9 @@ h1,h2,h3,h4,h5,h6,p,span{
     position: relative;
     transition: var(--trans);
 }
-#about .ab_social a:hover{
+#about .ab_social .btn:hover{
     background: var(--black);
-    color: var(--sky);
+    color: var(--sky) !important;
     border-color: var(--black);
 }
 #about .skil_head{
@@ -806,7 +783,7 @@ h1,h2,h3,h4,h5,h6,p,span{
                      portfolio page css start
                      *****************************************/
 #portfolio .mix_container{
-    height: 60vh;
+    height: 72vh;
     overflow-y: auto;
     padding-right: .5rem;
 }
@@ -827,7 +804,7 @@ h1,h2,h3,h4,h5,h6,p,span{
     display: flex;
     justify-content: center;
     gap: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 #portfolio .filter_btn button{
     background: transparent;
