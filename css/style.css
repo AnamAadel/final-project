@@ -15,7 +15,8 @@
     /* colors */
     /* --yellow: #AD8E70;
     --sky: #D5CEA3; */
-    --yellow: #9DC6A7;
+    --yellow: #A0E4CB;
+    /* --yellow: #9DC6A7; */
     --sky: #D5CEA3;
     --them: #A62D4D;
     --black: #2F3840;
@@ -236,7 +237,7 @@ h1,h2,h3,h4,h5,h6,p,span{
 #dashboard .indicator{
     width: 90%;
     height: 50px;
-    background: #9DC6A7;
+    background: var(--yellow);
     position: absolute;
     top: 22%;
     border-top-right-radius: 30px;
