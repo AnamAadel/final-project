@@ -28,7 +28,7 @@ particlesJS('water_effect',
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": .0,
+          "width": .1,
           "color": "#000000"
         },
         "polygon": {
